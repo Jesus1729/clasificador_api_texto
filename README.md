@@ -84,6 +84,20 @@ Para el despliegue, solo se requiere la carpeta model, la carpeta src, además d
 Puedes acceder a la API desplegada en:
 https://glowing-net-447805-q9.uc.r.appspot.com/docs
 
+## Ejemplo de uso con curl
+
+Puedes probar la API directamente desde la terminal con el siguiente comando:
+
+```bash
+curl -X 'POST' \
+  'https://glowing-net-447805-q9.uc.r.appspot.com/predict' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "titular": "2 Democratic Senators Say Neil Gorsuch Refused To Meet With Them"
+}'
+```
+
 ## Notas sobre el análisis y modelo
 
 - Se realizó un análisis exploratorio de datos (EDA) para comprender la distribución de clases y las características generales de los titulares de noticias.
